@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./lib/jquery-3.6.0.js"></script>
+    <script src="ApiScript.js"></script>
+    <link rel="stylesheet" type="text/css" href="webStyle.css" />
+</head>
+<body>
+  <h1 style="position: relative; top: 0px; left: 0px;"><img src="TopBanner.PNG" style="width: 100%; height: fit-content;"></h1>
+  <div id="wholeWrap">
+  <div id="listWrap">
+    <h2 for="list-title">List Title:</h2>
+    <input type="text" id="list-title-name" name="list-title-name"><br><br>
+    <h2 for="list-description">List Description:</h2>
+    <textarea id="list-content" name="list-content" rows="5" cols="50"></textarea><br>
+    <button id="btn_make" onclick="createList();">Create List</button><br>
+    <div id="list-board"></div>
+    <div id="list-contents" style="margin-top: 2%;"></div>
+  </div>
+  <div id="searchWrap">
+    <div class="" style="position: relative; left: 0px; text-align: center;">
+      <label for="bookQuery" style="font-size: x-large;">Search:</label>
+      <input type="text" id="bookQuery" name="bookQuery" style="width: 300px; height: 50px; border-radius: 20px; font-size: x-large;"/>
+      <button id="searchButton">Search Books</button>
+    </div>
+    <div id="info">
+      <div id="bookList"></div>
+    </div>
+  </div> 
+</body>
+</html>
+</html>
